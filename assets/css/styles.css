@@ -1,0 +1,79 @@
+header, section, footer {
+    padding: 50px 0px;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    color: white;
+    font-weight: 900;
+}
+
+.proyecto:hover .overlay {
+    opacity: 0.9;
+}
+
+#aboutMe, #contactMe {
+    background-color: rgb(185, 241, 241);
+}
+
+footer {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.nav-item .nav-link {
+    font-size: 25px;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    font-weight: 700;
+    color:rgb(97, 97, 245);
+}
+
+#contactMe i{
+    font-size: 35px;
+}
+
+#contactMe a{
+    color: black;
+}
+
+@keyframes lightSpeedInLeft {
+    0% {
+      -webkit-transform:translate3d(-100%,0,0) skewX(30deg);
+      transform:translate3d(-100%,0,0) skewX(30deg);
+      opacity:0;
+      color: red;
+    }
+    60% {
+      -webkit-transform:skewX(-20deg);
+      transform:skewX(-20deg);
+      opacity:1;
+    }
+    80% {
+      -webkit-transform:skewX(5deg);
+      transform:skewX(5deg);
+    }
+    to {
+      -webkit-transform:translateZ(0);
+      transform:translateZ(0);
+      color:black;
+      -moz-transform:translateZ(0);
+      -ms-transform:translateZ(0);
+      -o-transform:translateZ(0);
+}
+  }
